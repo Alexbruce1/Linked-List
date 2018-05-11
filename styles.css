@@ -1,0 +1,21 @@
+body {
+  background-color: #455A64;
+  font-family: open sans;
+}
+
+.input-section {
+  background-color: #455A64;
+  margin: 0;
+}
+
+.page-header {
+  color: white;
+}
+
+.header-logo {
+  height: 5rem;
+}
+
+.output-section {
+  color: #CFD8DC;
+}
