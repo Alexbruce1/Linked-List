@@ -1,21 +1,79 @@
 body {
   background-color: #455A64;
-  font-family: open sans;
+  display: inline-block;
+  width: 100%;
+}
+
+section {
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 50%;
 }
 
 .input-section {
   background-color: #455A64;
-  margin: 0;
+  display: inline-block;
+  font-family: open sans;
+}
+
+.section-header {
+  font-size: 5em;
+  margin: 20vh auto 0 auto;
+  width: 80%;
+}
+
+.header-logo {
+  height: 3rem;
 }
 
 .page-header {
   color: white;
+  display: inline;
+  font-weight: 800;
+  width: 100;
 }
 
-.header-logo {
-  height: 5rem;
+.page-form {
+  margin: auto;
+  width: 550px;
+}
+
+.form-input {
+  color: #455A64;
+  font-size: 1.5em;
+  height: 50px;
+  margin-top: 50px;
+  outline: none;
+  width: 100%;
+}
+
+.form-text-input {
+  text-indent: 1em;
+}
+
+.form-text-input::placeholder {
+  color: #CFD8DC;
+}
+
+.submit-button {
+  background-color: #FFC107;
+  border: 0;
+  box-sizing: content-box;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+  width: 99%;
+}
+
+.submit-button:hover {
+  background-color: #FFD773;
 }
 
 .output-section {
-  color: #CFD8DC;
+  background-color: #CFD8DC;
+  display: inline-block;
+  font-family: open sans;
+  right: 0;
 }
