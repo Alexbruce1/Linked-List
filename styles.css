@@ -77,3 +77,72 @@ section {
   font-family: open sans;
   right: 0;
 }
+
+.card {
+  background-color: white;
+  border-color: #607D8B;
+  border: 1px;
+  border-style: solid;
+  height: 10em;
+  margin-left: 7%;
+  padding: 1%;
+  text-align: left;
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.title {
+  color: #455A64;
+  border: 0;
+  border-bottom: 2px;
+  border-color: #CFD8DC;
+  border-style: solid;
+  font-size: 2em;
+  font-weight: lighter;
+  margin: 2%;
+  padding-bottom: 1%;
+}
+
+.link {
+  color: #607D8B;
+  font-size: 130%;
+  padding-left: 2%;
+  text-decoration-color: #F2F4F4;
+}
+
+.delete {
+  padding-left: 82%;
+}
+
+.read-delete {
+  border: 0;
+  border-top: 2px;
+  border-style: solid;
+  border-color: #CFD8DC;
+  color: #455A64;
+  font-size: 1em;
+  margin: 2%;
+  padding-top: 2%;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration-color: #FFC107;
+}
+
+.mid {
+  padding-bottom: 4%;
+  margin-top: 5%;
+}
+
+.read:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #FFC107;
+}
+
+.delete:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #FFC107;
+}
