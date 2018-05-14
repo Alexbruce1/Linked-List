@@ -6,7 +6,6 @@ body {
 
 section {
   height: 100vh;
-  position: absolute;
   text-align: center;
   top: 0;
   width: 50%;
@@ -16,6 +15,7 @@ section {
   background-color: #455A64;
   display: inline-block;
   font-family: open sans;
+  position: fixed;
 }
 
 .section-header {
@@ -71,9 +71,17 @@ section {
   background-color: #FFD773;
 }
 
+.submit-button:disabled {
+  background-color: #ffe083;
+  cursor: not-allowed;
+}
+
+
 .output-section {
   background-color: #CFD8DC;
   display: inline-block;
+  position: fixed;
+  overflow: scroll;
   font-family: open sans;
   right: 0;
 }
@@ -82,7 +90,7 @@ section {
   background-color: white;
   border: 1px solid #607D8B;
   height: 10em;
-  margin: 1% 0% 0% 7%;
+  margin: 7% auto;
   padding: 1%;
   text-align: left;
   width: 80%;
