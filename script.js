@@ -4,6 +4,9 @@ var enterButton = document.querySelector('.submit-button');
 var outputList = document.querySelector('#output-list');
 
 enterButton.addEventListener('click', createCard);
+inputWebsiteTitle.addEventListener('keyup', disableButton);
+inputWebsiteUrl.addEventListener('keyup', disableButton);
+
 
 function createCard() {
   event.preventDefault();
@@ -21,5 +24,14 @@ function createCard() {
          <span class="delete">Delete</span>
        </div>
       </article>`;
+  }
+}
+
+
+function disableButton() {
+  if (inputWebsiteTitle.value && inputWebsiteUrl.value) {
+    enterButton.disabled = false;
+  } else {
+    enterButton.disabled = true;
   }
 }
