@@ -141,17 +141,17 @@ a:hover {
   margin-top: 5%;
 }
 
-.read:hover {
+.read-delete:hover {
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: #FFC107;
 }
 
-.delete:hover {
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: #FFC107;
+.read {
+  text-decoration: none;
+  color: #F05A28;
 }
+
 
 
 @media screen and (max width: 1400px){
