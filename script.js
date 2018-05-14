@@ -11,11 +11,15 @@ function createCard() {
     alert('Please fill the required text fields to continue');
   } else {
     outputList.innerHTML +=
-    `<article>
-      <h1 class="title">${inputWebsiteTitle.value}</h1>
-      <a class="url" href="https://${inputWebsiteUrl.value}">${inputWebsiteUrl.value}</a>
-      <button class="read">Read</button>
-      <button class="delete">Delete</button>
-    </article>`;
+    `<article class="card">
+       <h1 class="title">${inputWebsiteTitle.value}</h1>
+       <div class="mid">
+         <a class="link" href="https://${inputWebsiteUrl.value}">${inputWebsiteUrl.value}</a>
+       </div>
+       <div class="read-delete">
+         <span class="read">Read</span>
+         <span class="delete">Delete</span>
+       </div>
+      </article>`;
   }
 }

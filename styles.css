@@ -78,37 +78,9 @@ section {
   right: 0;
 }
 
-@media screen and (max width: 1400px){
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .card {
   background-color: white;
-  border-color: #607D8B;
-  border: 1px;
-  border-style: solid;
+  border: 1px solid #607D8B;
   height: 10em;
   margin-left: 7%;
   padding: 1%;
@@ -172,3 +144,30 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: #FFC107;
 }
+
+
+@media screen and (max width: 1400px){
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
