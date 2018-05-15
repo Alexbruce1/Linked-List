@@ -2,6 +2,8 @@ var inputWebsiteTitle = document.querySelector('.title-input');
 var inputWebsiteUrl = document.querySelector('.url-input');
 var enterButton = document.querySelector('.submit-button');
 var outputList = document.querySelector('#output-list');
+var toggleRead = document.querySelector('.read');
+var toggleDelete = document.querySelector('.delete');
 
 enterButton.addEventListener('click', createCard);
 inputWebsiteTitle.addEventListener('keyup', disableButton);
