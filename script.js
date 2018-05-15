@@ -27,7 +27,6 @@ function createCard() {
   }
 }
 
-
 function disableButton() {
   if (inputWebsiteTitle.value && inputWebsiteUrl.value) {
     enterButton.disabled = false;
