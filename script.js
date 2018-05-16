@@ -5,11 +5,13 @@ var outputList = document.querySelector('#output-list');
 var toggleRead = document.querySelector('.read-button');
 var toggleDelete = document.querySelector('.delete');
 var bookmarkCount = 0;
-var readBookmarks = 0;
+var readBookmarks = document.querySelector('bookmark-count-number');
+var unreadBookmarks = 0;
 
 enterButton.addEventListener('click', createCard);
 inputWebsiteTitle.addEventListener('keyup', disableButton);
 inputWebsiteUrl.addEventListener('keyup', disableButton);
+
 
 
 function createCard() {
@@ -30,14 +32,15 @@ function createCard() {
        </div>
       </article>`;
       bookmarkCounter();
+      unreadBookmarkCounter();
+
+
   }
 }
 
 function addReadClass(bookmarkNumber) {
   var articleCard = document.getElementById(`${bookmarkNumber}`);
   articleCard.classList.toggle('read');
-  readBookmarks ++
-  unreadBookmarkCounter();
 }
 
 function bookmarkCounter() {
@@ -47,7 +50,8 @@ function bookmarkCounter() {
 
 function unreadBookmarkCounter() {
   var unreadBookmarks = document.querySelector('.unread-bookmarks');
-  unreadBookmarks.innerHTML = `Unread Bookmarks: <h3 class="bookmark-count-number">${readBookmarks} </h3>`
+  unreadBookmarks.innerHTML = `Unread Bookmarks: <h3 class="bookmark-count-number">${readBookmarks +=1} </h3>` 
+ 
 }
 
 function deleteCard(bookmarkNumber) {
@@ -64,3 +68,12 @@ function disableButton() {
     enterButton.disabled = true;
   }
 }
+
+
+
+
+
+
+
+
+
