@@ -129,6 +129,7 @@ section {
   color: #607D8B;
   display: block;
   font-size: 130%;
+  line-height: 1.75rem;
   margin: 1%;
   overflow-x: scroll;
   padding-left: 2%;
@@ -157,6 +158,19 @@ section {
   padding-top: 2%;
 }
 
+.read {
+  background-color: #f2f4f4;
+}
+
+.read .link {
+  text-decoration: underline;
+}
+
+.read .read-button {
+  color: #f05A28;
+  font-weight: 800;
+}
+
 a:hover {
   font-weight: bold;
   text-decoration-color: #FFC107;
@@ -177,6 +191,21 @@ a:hover {
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: #FFC107;
+}
+
+.delete-all-read {
+  background-color: #CFD8DC;
+  border: 3px solid #455A64;
+  border-radius: 10px;
+  bottom: 0;
+  color: #455A64;
+  font-weight: 700;
+  height: 40px;
+  margin: 20px;
+  outline: none;
+  position: fixed;
+  right: 0;
+  width: 100px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -222,19 +251,6 @@ a:hover {
   .read-button,
   .delete {
     cursor: pointer;
-  }
-
-  .read {
-    background-color: #f2f4f4;
-  }
-
-  .red-read .link {
-    text-decoration: underline;
-  }
-
-  .red-read .read-button {
-    color: #f05A28;
-    font-weight: 800;
   }
 
   .delete {
@@ -348,7 +364,9 @@ a:hover {
 
 
 
-
+.cleared {
+  display: none;
+}
 
 
 
