@@ -77,6 +77,19 @@ section {
   cursor: not-allowed;
 }
 
+.total-bookmarks,
+.unread-bookmarks {
+  color: #FFC107;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-weight: 800;
+  margin: 2.5rem;
+}
+
+.bookmark-count-number {
+  color: #fff;
+  display: inline-block;
+}
 
 .output-section {
   background-color: #CFD8DC;
@@ -154,7 +167,7 @@ a:hover {
   margin-top: 5%;
 }
 
-.read:hover {
+.read-button:hover {
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: #FFC107;
@@ -206,6 +219,24 @@ a:hover {
     width: 96%;
   }
 
+  .read-button,
+  .delete {
+    cursor: pointer;
+  }
+
+  .read {
+    background-color: #f2f4f4;
+  }
+
+  .red-read .link {
+    text-decoration: underline;
+  }
+
+  .red-read .read-button {
+    color: #f05A28;
+    font-weight: 800;
+  }
+
   .delete {
     padding: 0;
     text-align: right;
@@ -223,7 +254,7 @@ a:hover {
   .input-section {
     box-shadow: 0px 2px 10px  #222;
     display: block;
-    height: 40vh;
+    height: 45vh;
     z-index: 1;
   }
 
@@ -248,8 +279,14 @@ a:hover {
     padding: 0;
   }
 
+  .total-bookmarks,
+  .unread-bookmarks {
+    display: block;
+    margin: 1rem;
+  }
+
   .output-section {
-    margin-top: 40vh;
+    margin-top: 45vh;
     position: static;
   }
 
@@ -277,7 +314,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   .input-section {
-    height: 35vh;
+    height: 41vh;
   }
 
   .section-header {
@@ -299,7 +336,13 @@ a:hover {
   }
 
   .output-section {
-    margin-top: 35vh;
+    margin-top: 41vh;
+  }
+
+  .total-bookmarks,
+  .unread-bookmarks {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 
