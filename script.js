@@ -19,6 +19,7 @@ function createCard() {
     alert('Please fill the required text fields to continue');
   } else {
     bookmarkCount ++
+    readBookmarks ++
     outputList.innerHTML +=
     `<article class="card" id="${bookmarkCount}">
        <h1 class="title">${inputWebsiteTitle.value}</h1>
@@ -31,6 +32,7 @@ function createCard() {
        </div>
       </article>`;
       bookmarkCounter();
+      unreadBookmarkCounter();
       emptyInputs();
       // createRemoveButton();
   }
@@ -39,7 +41,7 @@ function createCard() {
 function addReadClass(bookmarkNumber) {
   var articleCard = document.getElementById(`${bookmarkNumber}`);
   articleCard.classList.toggle('read');
-  readBookmarks ++
+  readBookmarks --
   unreadBookmarkCounter();
 }
 
@@ -71,6 +73,8 @@ function disableButton() {
     enterButton.disabled = true;
   }
 }
+
+
 
 // function createRemoveButton() {
 //   var buttonArea = document.querySelector('.delete-button-area');
