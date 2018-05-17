@@ -11,7 +11,7 @@ var readBookmarks = 0;
 enterButton.addEventListener('click', createCard);
 inputWebsiteTitle.addEventListener('keyup', disableButton);
 inputWebsiteUrl.addEventListener('keyup', disableButton);
-// deleteAllRead.addEventListener('click', removeReadBookmarks)
+
 
 function createCard() {
   event.preventDefault();
@@ -33,8 +33,7 @@ function createCard() {
       </article>`;
       bookmarkCounter();
       unreadBookmarkCounter();
-      emptyInputs();
-      // createRemoveButton();
+      emptyInputs();     
   }
 }
 
@@ -74,21 +73,6 @@ function disableButton() {
   }
 }
 
-
-
-// function createRemoveButton() {
-//   var buttonArea = document.querySelector('.delete-button-area');
-//   buttonArea.innerHTML = `
-//     <button class="delete-all-read">Delete Read</button>`;
-  
-// }
-
-// function removeReadBookmarks(bookmarkNumber) {
-//   var articleCard = document.getElementById(`${bookmarkNumber}`);
-//   articleCard.classList.toggle('cleared');
-//   readBookmarks --
-//   console.log(articleCards);
-// }
 
 
 

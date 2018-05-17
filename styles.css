@@ -1,5 +1,4 @@
 body {
-  /*background-color: #455A64;*/
   display: inline-block;
   width: 100%;
 }
@@ -94,9 +93,9 @@ section {
 .output-section {
   background-color: #CFD8DC;
   display: inline-block;
+  font-family: open sans;
   position: fixed;
   overflow: scroll;
-  font-family: open sans;
   right: 0;
 }
 
@@ -209,7 +208,6 @@ a:hover {
 }
 
 @media screen and (max-width: 1400px) {
-  /*input section*/
   .header-logo {
     height: 2.75rem;
   }
@@ -226,7 +224,6 @@ a:hover {
     width: 100%;
   }
 
-  /*output section*/
   .card {
     height: 15vw;
   }
@@ -259,7 +256,6 @@ a:hover {
   }
 }
 
-/*FIRST MOBILE/BLOCK DISPLAY*/
 @media screen and (max-width: 770px) {
 
   section {
@@ -341,20 +337,20 @@ a:hover {
     font-size: 10vw;
     margin: 0;
   }
-
+  
   .header-logo {
     height: 10vw;
     margin: 0;
   }
-
+  
   .form-input {
     margin-top: 35px;
   }
-
+  
   .output-section {
     margin-top: 41vh;
   }
-
+  
   .total-bookmarks,
   .unread-bookmarks {
     font-size: 1rem;
@@ -362,10 +358,8 @@ a:hover {
   }
 }
 
-
-
-.cleared {
-  display: none;
+  .cleared {
+    display: none;
 }
 
 
